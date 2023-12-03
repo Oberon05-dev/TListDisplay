@@ -31,9 +31,31 @@ Deletes the element at position `Id` from the chosen list (`Column`).
 
 > * `Id` (type: Integer) - the position of the element to be deleted.
 > * `Column` (type: Integer) - the column number from which the element should be deleted.
+
 **Example:**
 ```Delphi
   TListDisplay.Deletet(0, 0); // Deleted element 'Test1' from previous example
+```
+---
+### `Select(Id: Integer):`
+Changes the background color of shapes in the list at position `Id` for both columns. Scrolls down if the selection is out of the range of `FMax`.
+
+**Parameters:**
+- `Id` (type: Integer) - the position for which the background color should be changed.
+
+  **Example:**
+```Delphi
+  TListDisplay.Select(0); // Element 'Test2' is selected
+```
+---
+### `Clear(Column: Integer):`
+Clears the all text in the specified column (`Column`).
+
+**Parameters:**
+- `Column` (type: Integer) - the column number to be cleared.
+
+```Delphi
+  TListDisplay.Clear(1); // Column with 'Test2' has been cleared 
 ```
 ---
 * `Select(Id: Integer):` Change background color of Shapes in list of (`Id`) for both column, Scroll down if select is out of range maxRows<br />
