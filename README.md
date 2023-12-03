@@ -1,11 +1,14 @@
 # TListDisplay
-Custom component for Delphi. This is two list combine in one object which exist separately without user mouse inputs.
+Custom component for Delphi. This is two list combine in one object which exist separately without mouse inputs. This component has automatic scroll. I created this component beacuse 
+TListBox interacts with mounse input and has ugly scroll, if items goes out of view.
 
-| Column: 0 | Column: 1 |
+| Column: 0 | Column: 1 |  
 | ----- | ------ |
 | Id: 0 | Id: 0 |
 | Id: 1 | Id: 1 |
 | Id: 2 | Id: 2 |
+
+
 
 ## **usage:**
 
