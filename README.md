@@ -7,7 +7,7 @@ Custom component for Delphi. This is two list combine in one object which exist 
 | Id: 1 | Id: 1 |
 | Id: 2 | Id: 2 |
 
-## usage:
+## **usage:**
 
 ### **Consts:**<br />
 
@@ -118,7 +118,7 @@ Replaces all elements in the selected column (`Column`) with the elements provid
   TListDisplay.AssignStringsToColumn(ImportFile, 1); // Column 2 has been replaced by a list: ImportFIle
 ```
 ---
-**Know Error:**
+### **Know Error:**
 > If you place a group box below the list, the list text will be created below the group box area and the user will not see the text.
 
   
