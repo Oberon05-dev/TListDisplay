@@ -11,8 +11,7 @@ Custom component for Delphi. This is two list combine in one object without user
 * `MyIni:` Ini file for save data for example position<br />
 
 ### **Procedures:**<br />
-#### **Important:**
-> The parameter `Id` must be within the range of the list length of chosen column fo all procedures.
+> **Note:**The parameter `Id` must be within the range of the list length of chosen column fo all procedures.
 ---
 ## `AddElement(ElementText1: string; Id, Column: Integer):`
 Adds a new element (`ElementText1`) at position `Id` in the chosen list (`Column`). The parameter `Id` must be within the range of the list length. The procedure displays the new element.
