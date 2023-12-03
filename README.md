@@ -4,6 +4,15 @@ Custom component for Delphi. This is two list combine in one object without user
 ## usage:
 
 ### **Consts:**<br />
+
+| Name | Type | Usage |
+| ----- | ------ | --- |
+| `FShapes1` | TList | List of background shapes (Background cells) of column 1 |
+| `FShapes2` | TList | List of background shapes (Background cells) of column 2 |
+| `FLabels1` | TList | List of text elements of column 1 |
+| `FLabels2` | TList | List of text elements of column 2 |
+| `MyIni` | TIniFile | Ini file for save data for example position |
+
 * `FShapes1:` List of background shapes (Background cells) of column 1<br />
 * `FShapes2:` List of background shapes (Background cells) of column 2<br />
 * `FLabels1:` List of text elements of column 1<br />
