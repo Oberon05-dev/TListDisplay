@@ -22,8 +22,9 @@ Adds a new element (`ElementText1`) at position `Id` in the chosen list (`Column
 
 **Example:**
 ```Delphi
-  TListDisplay.AddElement('Test1', 0, 0); // adds 'Test1' to row 1 column 1 
-  TListDisplay.AddElement('Test2', 0, 1); // adds 'Test2' to row 1 column 2 
+  TListDisplay.AddElement('Test3', 0, 0); // adds 'Test3' to row 1 column 1 
+  TListDisplay.AddElement('Test2', 0, 1); // adds 'Test2' to row 1 column 2
+  TListDisplay.AddElement('Test1', 1, 1); // adds 'Test1' to row 2 column 2  
 ```
 ---
 ### `Delete(Id, Column: Integer):` Delete element of (`Id`) in chosen list (`Colum`n)
@@ -34,33 +35,61 @@ Deletes the element at position `Id` from the chosen list (`Column`).
 
 **Example:**
 ```Delphi
-  TListDisplay.Deletet(0, 0); // Deleted element 'Test1' from previous example
+  TListDisplay.Delete(1, 1); // Deleted element 'Test1' from previous example
 ```
 ---
 ### `Select(Id: Integer):`
 Changes the background color of shapes in the list at position `Id` for both columns. Scrolls down if the selection is out of the range of `FMax`.
 
-**Parameters:**
-- `Id` (type: Integer) - the position for which the background color should be changed.
+> * `Id` (type: Integer) - the position for which the background color should be changed.
 
   **Example:**
 ```Delphi
-  TListDisplay.Select(0); // Element 'Test2' is selected
+  TListDisplay.Select(0); // Elements 'Test2' and 'Test1' are selected
 ```
 ---
 ### `Clear(Column: Integer):`
 Clears the all text in the specified column (`Column`).
 
-**Parameters:**
-- `Column` (type: Integer) - the column number to be cleared.
+> * `Column` (type: Integer) - the column number to be cleared.
 
 ```Delphi
   TListDisplay.Clear(1); // Column with 'Test2' has been cleared 
 ```
 ---
-* `Select(Id: Integer):` Change background color of Shapes in list of (`Id`) for both column, Scroll down if select is out of range maxRows<br />
-* `Clear(Column: Integer):` Clears text lists selecelted (`Column`)<br />
-* `Items(Id: Integer):string` Function thats export string of (`Id`) from FLabels2 (in future i add Column)<br />
+## 5. `Items(Id: Integer): string;`
+A function that returns the text of the element at position `Id` from `FLabels2`. For a now only For Flabels2, maybe later i will finish it
+
+> * `Id` (type: Integer) - the position of the element to retrieve.
+
+```Delphi
+  var i := String;
+  i := TListDisplay.Items(0); // i = 'Test3' 
+```
+---
+## 6. `Exchange(i, j, Column: Integer):`
+Exchanges the element at position `i` with the element at position `j` in the chosen list (`Column`).
+
+> * `i` (type: Integer) - the position of the first element to be exchanged.
+> * `j` (type: Integer) - the position of the second element to be exchanged.
+> * `Column` (type: Integer) - the column number in which the exchange should occur.
+
+```Delphi
+  TListDisplay.AddElement('Test4', 1, 0);
+  TListDisplay.Exchange(0, 1, 0); // 'Test4' top of column 2, 'Test3' is bellow 
+```
+---
+## 7. `Reverse(Column: Integer):`
+Reverses the selected list in the specified column (`Column`).
+
+> * `Column` (type: Integer) - the column number whose list should be reversed.
+---
+## 8. `AssignStringsToColumn(ElementStrings: TStrings; Column: Integer):`
+Replaces all elements in the selected column (`Column`) with the elements provided in the `ElementStrings` object.
+
+> * `ElementStrings` (type: TStrings) - the list of texts to be assigned to the selected column.
+> * `Column` (type: Integer) - the column number whose elements should be replaced.
+---
 * `Exchange(i, j, Column: Integer):` Exchanges item if Id (`i`) with item of Id (`j`) in chosen list (`Column`)<br />
 * `Reverse(Column: Integer):` Reverse selected (`Column`)<br />
 * `AssignStringsToColumn(ElementStrings: TStrings; Column: Integer):`Replace all selected (`Column`) witch selected (`ElementString`)<br />
