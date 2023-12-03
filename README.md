@@ -74,6 +74,12 @@ Exchanges the element at position `i` with the element at position `j` in the ch
 > * `j` (type: Integer) - the position of the second element to be exchanged.
 > * `Column` (type: Integer) - the column number in which the exchange should occur.
 
+| Before  | After |
+| ----- | ------ |
+| Test3 | Test4  |
+| Test4 | Test3  |
+| ...   | ...    |
+
 ```Delphi
   TListDisplay.AddElement('Test4', 1, 0);
   TListDisplay.Exchange(0, 1, 0); // 'Test4' top of column 2, 'Test3' is bellow 
