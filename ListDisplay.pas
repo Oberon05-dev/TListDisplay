@@ -34,8 +34,6 @@ type
     FLabels1: TList;
     FShapes2: TList;
     FLabels2: TList;
-    FPosition: Integer;
-    FCounter: Integer;
 
     MyIni: TIniFile;
 
@@ -86,9 +84,6 @@ begin
   FShapes2 := TList.Create;
   FLabels1 := TList.Create;
   FLabels2:= TList.Create;
-
-  FPosition := 0;
-  FCounter := 0;
 
   if not (csDesigning in ComponentState) then
   begin
@@ -339,10 +334,14 @@ begin
     begin
       TShape(FShapes1[i]).Brush.Color := FBlack;
       TShape(FShapes2[i]).Brush.Color := FBlack;
+      TShape(FShapes1[i]).Pen.Color := FBlack;
+      TShape(FShapes2[i]).Pen.Color := FBlack;
     end;
 
     TShape(FShapes1[Id]).Brush.Color := FBlue;
     TShape(FShapes2[Id]).Brush.Color := FBlue;
+    TShape(FShapes1[Id]).Pen.Color := FBlue;
+    TShape(FShapes2[Id]).Pen.Color := FBlue;
 
     DisplayText(0, 0);
     DisplayText(1, 0);
@@ -360,10 +359,14 @@ begin
     begin
       TShape(FShapes1[i]).Brush.Color := FBlack;
       TShape(FShapes2[i]).Brush.Color := FBlack;
+      TShape(FShapes1[i]).Pen.Color := FBlack;
+      TShape(FShapes2[i]).Pen.Color := FBlack;
     end;
 
     TShape(FShapes1[Id- Scroll]).Brush.Color := FBlue;
     TShape(FShapes2[Id - Scroll]).Brush.Color := FBlue;
+    TShape(FShapes1[Id- Scroll]).Pen.Color := FBlue;
+    TShape(FShapes2[Id- Scroll]).Pen.Color := FBlue;
   end;
 end;
 
@@ -386,8 +389,6 @@ begin
         TLabel(FLabels2[i]).Free;
     end;
     FLabels2.Clear;
-
-    FCounter := 0;
   end;
 end;
 
@@ -508,6 +509,3 @@ end;
 
 
 end.
-
-// to do:
-// 1. zrobić zaznaczenie.
