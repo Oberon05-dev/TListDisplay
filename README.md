@@ -1,5 +1,5 @@
 # TListDisplay
-Custom component for Delphi. This is two list combine in one object without user mouse inputs.
+Custom component for Delphi. This is two list combine in one object which exist separately without user mouse inputs.
 
 ## usage:
 
