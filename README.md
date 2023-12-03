@@ -13,12 +13,6 @@ Custom component for Delphi. This is two list combine in one object without user
 | `FLabels2` | TList | List of text elements of column 2 |
 | `MyIni` | TIniFile | Ini file for save data for example position |
 
-* `FShapes1:` List of background shapes (Background cells) of column 1<br />
-* `FShapes2:` List of background shapes (Background cells) of column 2<br />
-* `FLabels1:` List of text elements of column 1<br />
-* `FLabels2:` List of text elements of column 2<br />
-* `MyIni:` Ini file for save data for example position<br />
-
 ### **Procedures:**<br />
 > **_Note:_** The parameter `Id` must be within the range of the list length of chosen column fo all procedures.
 ---
