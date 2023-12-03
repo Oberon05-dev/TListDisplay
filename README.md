@@ -67,7 +67,7 @@ Clears the all text in the specified column (`Column`).
   TListDisplay.Clear(1); // Column with 'Test2' has been cleared 
 ```
 ---
-## 5. `Items(Id: Integer): string;`
+## `Items(Id: Integer): string;`
 A function that returns the text of the element at position `Id` from `FLabels2`. For a now only For Flabels2, maybe later i will finish it
 
 > * `Id` (type: Integer) - the position of the element to retrieve.
@@ -78,7 +78,7 @@ A function that returns the text of the element at position `Id` from `FLabels2`
   i := TListDisplay.Items(0); // i = 'Test3' 
 ```
 ---
-## 6. `Exchange(i, j, Column: Integer):`
+## `Exchange(i, j, Column: Integer):`
 Exchanges the element at position `i` with the element at position `j` in the chosen list (`Column`).
 
 > * `i` (type: Integer) - the position of the first element to be exchanged.
@@ -97,7 +97,7 @@ Exchanges the element at position `i` with the element at position `j` in the ch
   TListDisplay.Exchange(0, 1, 0); // 'Test4' top of column 2, 'Test3' is bellow 
 ```
 ---
-## 7. `Reverse(Column: Integer):`
+## `Reverse(Column: Integer):`
 Reverses all selected column (`Column`).
 
 > * `Column` (type: Integer) - the column number whose list should be reversed.
@@ -107,7 +107,7 @@ Reverses all selected column (`Column`).
   TListDisplay.Reverse(1); // Column 2 reversed and i looks like before
 ```
 ---
-## 8. `AssignStringsToColumn(ElementStrings: TStrings; Column: Integer):`
+## `AssignStringsToColumn(ElementStrings: TStrings; Column: Integer):`
 Replaces all elements in the selected column (`Column`) with the elements provided in the `ElementStrings` object.
 
 > * `ElementStrings` (type: TStrings) - the list of texts to be assigned to the selected column.
