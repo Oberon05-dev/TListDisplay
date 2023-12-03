@@ -53,6 +53,7 @@ Clears the all text in the specified column (`Column`).
 
 > * `Column` (type: Integer) - the column number to be cleared.
 
+  **Example:**
 ```Delphi
   TListDisplay.Clear(1); // Column with 'Test2' has been cleared 
 ```
@@ -62,6 +63,7 @@ A function that returns the text of the element at position `Id` from `FLabels2`
 
 > * `Id` (type: Integer) - the position of the element to retrieve.
 
+  **Example:**
 ```Delphi
   var i := String;
   i := TListDisplay.Items(0); // i = 'Test3' 
@@ -74,6 +76,7 @@ Exchanges the element at position `i` with the element at position `j` in the ch
 > * `j` (type: Integer) - the position of the second element to be exchanged.
 > * `Column` (type: Integer) - the column number in which the exchange should occur.
 
+  **Example:**
 | Before  | After |
 | ----- | ------ |
 | Test3 | Test4  |
@@ -86,19 +89,26 @@ Exchanges the element at position `i` with the element at position `j` in the ch
 ```
 ---
 ## 7. `Reverse(Column: Integer):`
-Reverses the selected list in the specified column (`Column`).
+Reverses all selected column (`Column`).
 
 > * `Column` (type: Integer) - the column number whose list should be reversed.
+
+  **Example:**
+```Delphi
+  TListDisplay.Reverse(1); // Column 2 reversed and i looks like before
+```
 ---
 ## 8. `AssignStringsToColumn(ElementStrings: TStrings; Column: Integer):`
 Replaces all elements in the selected column (`Column`) with the elements provided in the `ElementStrings` object.
 
 > * `ElementStrings` (type: TStrings) - the list of texts to be assigned to the selected column.
 > * `Column` (type: Integer) - the column number whose elements should be replaced.
+
+  **Example:**
+```Delphi
+  TListDisplay.AssignStringsToColumn(ImportFile, 1); // Column 2 has been replaced by a list: ImportFIle
+```
 ---
-* `Exchange(i, j, Column: Integer):` Exchanges item if Id (`i`) with item of Id (`j`) in chosen list (`Column`)<br />
-* `Reverse(Column: Integer):` Reverse selected (`Column`)<br />
-* `AssignStringsToColumn(ElementStrings: TStrings; Column: Integer):`Replace all selected (`Column`) witch selected (`ElementString`)<br />
   
 
 
