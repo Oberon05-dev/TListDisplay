@@ -122,8 +122,9 @@ Replaces all elements in the selected column (`Column`) with the elements provid
 ```
 ---
 ### **Know Errors:**
-> If you place a group box below the list, the list text will be created below the group box area and the user will not see the text.
-> positions of TLabels are breaking if your scale of text in windows, works normaly with '100%'.
+>  * If you place a group box below the list, the list text will be created below the group box area and the user will not see the text.
+>  * Positions of TLabels are breaking if your scale of text in windows, works normaly with '100%'.
+>  * Procedure AssignStringsToColumn may not work.
 
   
 
